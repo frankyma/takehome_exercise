@@ -6,9 +6,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  align-items: stretch;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.navigation {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  align-self: stretch;
+}
+
+.navigation li {
+  height: 3rem;
+  line-height: 3rem;
+  flex: 1;
+  text-align: center;
+  background-color: orange;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home {
+  text-align: center;
+}
+
+#gif {
+  flex: 1;
+}
+

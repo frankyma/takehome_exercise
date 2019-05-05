@@ -15,19 +15,21 @@ export default (state = initialState, action) => {
         current: 0,
         gifCount: action.payload.length
       };
-      break;
+    case types.LOADING: 
+      return {
+        ...state,
+        loaded: false,
+      };
     case types.GO_RIGHT: 
       return {
         ...state,
         current: action.payload,
       };
-      break;
     case types.GO_LEFT: 
       return {
         ...state,
         current: action.payload,
       };
-      break;
     default:
       return state
   }

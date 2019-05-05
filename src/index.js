@@ -13,8 +13,10 @@ ReactDOM.render(
   <Provider store={configureStore()}>
     <Router>
       <div>
-        <Link to="/home">home</Link>
-        <Link to="/">gifs</Link>
+        <ul className="navigation">
+          <li><Link to="/home">home</Link></li>
+          <li><Link to="/">gifs</Link></li>
+        </ul>
         <Route exact path="/" component={App} />
         <Route exact path="/home" component={Home} />
       </div>
